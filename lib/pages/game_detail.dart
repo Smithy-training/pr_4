@@ -21,31 +21,48 @@ class GameDetailPage extends StatelessWidget {
             SizedBox(height: 16),
             Text(
               game.title,
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
             ),
             SizedBox(height: 8),
             Text(
               'Developer: ${game.developer}',
-              style: TextStyle(fontSize: 16),
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.white,
+              ),
             ),
             SizedBox(height: 8),
             Text(
               'Release Date: ${game.releaseDate}',
-              style: TextStyle(fontSize: 16),
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.white,
+              ),
             ),
             SizedBox(height: 8),
             Text(
               'Price: \$${game.price}',
-              style: TextStyle(fontSize: 16),
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.white,
+              ),
             ),
             SizedBox(height: 16),
             Text(
               game.description,
-              style: TextStyle(fontSize: 16),
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.white,
+              ),
             ),
           ],
         ),
       ),
+      backgroundColor: Colors.grey[900],
     );
   }
 }
